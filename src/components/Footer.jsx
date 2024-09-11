@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 const Footer = () => {
     return (
-        <footer className="footer bg-base-300 text-base-content p-10">
+        <footer className="footer bg-base-300 text-base-content p-10" id='footer'>
             <nav>
                 <h6 className="footer-title">Sections</h6>
                 <Link to='/services' className="link link-hover">Services</Link>
