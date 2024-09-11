@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
     <div>
       <div
-        className="relative w-full h-screen bg-cover bg-center fadIn  transition-all  delay-150 "
+        className="relative w-full h-screen bg-cover bg-center fadIn  transition-all ease-in-out duration-300  delay-150 "
         style={{
           backgroundImage: showModal
             ? "url('/carousel-2.jpg')"
