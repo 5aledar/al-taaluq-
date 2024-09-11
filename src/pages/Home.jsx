@@ -12,12 +12,11 @@ export const Home = () => {
     <div>
         <Hero/>
         <Features/>
-        
+        <About/>
         <OurServices/>
         <LastNews/>
         <Team/>
         <TestomonialContainer />
-        <OurServices/>
     </div>
   )
 }
