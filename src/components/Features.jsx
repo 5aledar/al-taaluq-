@@ -32,7 +32,7 @@ const Features = () => {
             className="bg-white p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             key={index}
           >
-            <div className="mb-4 flex justify-center">
+            <div className="mb-4 flex justify-center text-orange-500">
               <img
                 className="w-20 h-20 "
                 src={feature.imgSrc}
