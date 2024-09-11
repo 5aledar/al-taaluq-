@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.fadIn{
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) ;
+    -webkit-animation-timeline: view();
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .9;
+  }
+}
+
+.fadIn{
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) ;
+    -webkit-animation-timeline: view();
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .9;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
