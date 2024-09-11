@@ -38,7 +38,7 @@ const TestomonialContainer = () => {
 
     <>
       {testimonials.length && (
-        <>
+        <div className=''>
           <Testemonial name={testimonials[currentIndex].name} comapny={testimonials[currentIndex].company} text={testimonials[currentIndex].text} />
 
           <div className="flex justify-center gap-3 items-center">
@@ -50,7 +50,7 @@ const TestomonialContainer = () => {
               <HiChevronRight className='m-auto size-14'/>
             </div>
           </div>
-        </>
+        </div>
       )}
  
     </>

@@ -11,10 +11,9 @@ export const Home = () => {
         <Hero/>
         <Features/>
         <OurServices />
-        <OurServices/>
         <Team/>
         <TestomonialContainer />
-        <OurServices/>
+        
     </div>
   )
 }
