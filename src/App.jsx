@@ -19,7 +19,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='services' element={<OurServices/>} />
       </Routes>
-      <Footer />
+      <Footer  />
     </React.Fragment>
   )
 }
