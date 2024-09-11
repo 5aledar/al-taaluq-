@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 shadow-lg">
-      <div className="max-w-[1600px] mx-auto px-6">
+      <div className="w-[100%] mx-auto px-[5%]">
         <div className="flex items-center justify-between">
           {/* Brand and Navbar items */}
           <div className="flex items-center space-x-7">
@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center">
             <Link
               to="/get-a-quote"
-              className={`py-2 px-3 text-xl ${active === '/get-a-quote' ? 'bg-white text-gray-900 rounded' : 'bg-gray-900 text-orange-500 border border-orange-500 rounded hover:bg-white hover:text-gray-900 hover:border-white transition duration-300'}`}
+              className={`py-2 px-3 text-[17px] ${active === '/get-a-quote' ? 'bg-white text-gray-900 rounded' : 'bg-gray-900 text-orange-500 border border-orange-500 rounded hover:bg-white hover:text-gray-900 hover:border-white transition duration-300'}`}
               onClick={() => handleItemClick('/get-a-quote')}
             >
               Get A Quote
