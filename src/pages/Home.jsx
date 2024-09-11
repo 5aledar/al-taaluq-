@@ -17,7 +17,7 @@ export const Home = () => {
         <LastNews/>
         <Team/>
         <TestomonialContainer />
-        <OurServices/>
+ 
     </div>
   )
 }
