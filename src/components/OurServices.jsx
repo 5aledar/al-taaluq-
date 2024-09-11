@@ -60,7 +60,7 @@ export const OurServices = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {features.map((feature, index) => (
           <div
-            className=" relative bg-white p-6 border    transition ease-in-out   hover:-translate-y-5  hover:bg-stone-100 duration-300 group"
+            className=" relative bg-white p-6 border   rounded-lg  transition ease-in-out   hover:-translate-y-5  hover:bg-stone-100 duration-300 group"
             key={index}
           >
             <div className="mb-4 flex justify-center ">
@@ -73,7 +73,7 @@ export const OurServices = () => {
             <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
             <p className="text-slate-600 text-lg">{feature.description}</p>
 
-            <div className=" cursor-pointer absolute -bottom-6 right-0   transition-all ease-in-out duration-500  bg-orange-300 text-white w-full opacity-0 group-hover:opacity-100 hover:bg-orange-500 ">
+            <div className=" cursor-pointer absolute -bottom-6 right-0   transition-all ease-in-out duration-500 rounded-xl p-0 m-0   bg-orange-300 text-white w-full opacity-0 group-hover:opacity-100  hover:bg-orange-500 ">
               <p className="font-bold items-center m-auto leading-10   ">
                 Read More<span className="ml-1 text-lg font-bold">&raquo;</span>
               </p>
