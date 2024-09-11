@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import React, { Fragment } from 'react'
+// import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import './index.css'
 import { Home } from './pages/Home'
+import { OurServices } from './components/OurServices'
 import Footer from './components/Footer'
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='services' element={<OurServices/>} />
       </Routes>
       <Footer />
     </React.Fragment>
