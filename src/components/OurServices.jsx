@@ -1,4 +1,3 @@
-import React from "react";
 
 export const OurServices = () => {
   const features = [
