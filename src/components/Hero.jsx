@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className={`absolute inset-0   bg-black bg-opacity-50 flex items-center`}>
           <div className={`container mx-auto`}>
             <div className={`flex justify-end  absolute ${showModal ? " left-4 top-48 sm:-left-64 " : "top-48 right-4 sm:top-48 sm:right-28"}`}>
-              <div className={` text-center ${showModal ?"text-left":"text-right"} lg:w-7/12`}>
+              <div className={` text-center ${showModal ?"sm:text-left":"sm:text-right"} lg:w-7/12`}>
                 <p className={`text-lg sm:text-2xl text-white   ${showModal ? "animate__animated animate__slideInRight" : "animate__animated animate__slideInLeft"} `}>
                   Welcome to <strong className="text-orange-500 ">GrowMark</strong>
                 </p>

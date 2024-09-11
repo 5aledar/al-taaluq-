@@ -30,10 +30,10 @@ export const OurActivities = () => {
 
   return (
     <>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 py-10 animate__animated animate__fadeInUp text-center">
         <span className="text-orange-500">Our</span> Activities
       </h2>
-      <div className="text-white w-full flex flex-col gap-4 sm:flex-row justify-center flex-wrap my-20 ">
+      <div className="text-white w-full flex flex-col gap-4 sm:flex-row justify-center flex-wrap my-20 animate__animated animate__fadeInUp ">
         {activities.map((activity, index) => (
           <div
             key={index}
