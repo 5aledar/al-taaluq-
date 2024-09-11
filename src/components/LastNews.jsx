@@ -1,35 +1,31 @@
 import React from 'react';
 
-const Features = () => {
+const LastNews = () => {
   const features = [
     {
       imgSrc: "/icon-1.png",
-      title: "Award Winning",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: "Cooperation Agreement ",
+      description: "Signing a cooperation agreement with Diamond Future Academy",
     },
     {
       imgSrc: "/icon-2.png",
-      title: "Professional Staff",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: " Memorandum of Understanding",
+      description: "Signing a memorandum of understanding with the Faculty of Economics at Damascus University",
     },
     {
       imgSrc: "/icon-3.png",
-      title: "Fair Prices",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
-    },
-    {
-      imgSrc: "/icon-4.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: " Cooperation note",
+      description: "Signing a memorandum of cooperation with Shahd Al -Sham Company",
     }
   ];
 
   return (
-    <div className="container mx-auto py-10">
-    <h2 className="text-4xl font-bold text-white text-center py-7">
-      Our Features
+    <div className="container   mx-auto text-center py-10">
+    <h2 className="text-4xl font-bold  text-white text-center py-7 ">
+      Alta'aloq LastNews
     </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+    
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {features.map((feature, index) => (
           <div
             className="bg-white p-6  rounded-lg  hover:shadow-sm transition-shadow duration-300"
@@ -51,4 +47,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default LastNews;
