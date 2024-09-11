@@ -9,6 +9,7 @@ export const Home = () => {
     <div>
         <Hero/>
         <Features/>
+        <Team/>
     </div>
   )
 }
