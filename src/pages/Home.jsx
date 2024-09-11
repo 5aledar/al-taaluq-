@@ -6,14 +6,13 @@ import Team from '../components/Team'
 import TestomonialContainer from '../containers/TestomonialContainer'
 import { OurActivities } from '../components/OurActivities'
 
-import About from '../components/About'
+// import About from '../components/About'
 import LastNews from '../components/LastNews'
 export const Home = () => {
   return (
     <div>
         <Hero/>
         <Features/>
-        
         <OurServices/>
         <LastNews/>
         <Team/>
