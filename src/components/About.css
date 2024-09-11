@@ -1,0 +1,11 @@
+.about {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(./public/about.jpg) left center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 100px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+.heghit{
+    height: 90vh;
+}
