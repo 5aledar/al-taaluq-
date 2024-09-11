@@ -8,19 +8,27 @@ const About = () => {
           <div className="col-lg-6 w-1/2 flex justify-center">
             <div className="lg:w-6/12">
               <div className="h-full flex items-center justify-center min-h-[300px]">
-                <button
-                className="animate-bounce"
-                 
-                ><a  href="https://youtu.be/P-FAqaeHSfc?feature=shared"><i><FaCirclePlay size={'100px'} style={{ color: "#f97316" }} /></i>
-</a>
-                  
+                <button className="animate-bounce">
+                  <a target="_balnk" href="https://youtu.be/P-FAqaeHSfc?feature=shared">
+                    <i>
+                      <FaCirclePlay
+                        size={"100px"}
+                        style={{ color: "#f97316" }}
+                      />
+                    </i>
+                  </a>
                 </button>
               </div>
             </div>
           </div>
-          <div className="col-lg-6 pt-lg-5 wow fadeIn mt-20 w-1/2 heghit mr-10" data-wow-delay="0.5s">
-            <div className="bg-white  rounded-top p-5 heghit mt-lg-5">
-              <p className="fs-5 fw-medium text-primary my-6 text-xl text-orange-500">About Us</p>
+          <div
+            className="col-lg-6 pt-lg-5 wow fadeIn mt-20 w-1/2 heghit mr-10"
+            data-wow-delay="0.5s"
+          >
+            <div className="bg-white  rounded-top p-5 heghit mt-lg-5 rounded-xl">
+              <p className="fs-5 fw-medium  my-6 text-xl text-orange-500">
+                About Us
+              </p>
               <h1 className="display-6 mb-4 text-3xl font-bold">
                 The Best Marketing Agency to Improve Your Business
               </h1>
@@ -51,6 +59,7 @@ const About = () => {
               </div>
               <a
                 href="#"
+                target="_balnk"
                 className={`inline-block bg-orange-500 text-white rounded-full py-3 px-5 animate__animated animate__slideInLeft hover:bg-orange-600 transition duration-400 `}
               >
                 Explore More
