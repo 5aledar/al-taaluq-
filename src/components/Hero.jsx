@@ -11,18 +11,19 @@ export const Hero = () => {
   return (
     <div>
       <div
-        className="relative w-full h-screen bg-cover bg-center "
+        className="relative w-full h-screen bg-cover bg-center fadIn  transition-all ease-in-out duration-300  delay-150 "
         style={{
           backgroundImage: showModal
             ? "url('/carousel-2.jpg')"
             : "url('/carousel-1.jpg')",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+            
         }}
       >
         <div className={`absolute inset-0   bg-black bg-opacity-50 flex items-center`}>
           <div className={`container mx-auto`}>
             <div className={`flex justify-end  absolute ${showModal ? " left-4 top-48 sm:-left-64 " : "top-48 right-4 sm:top-48 sm:right-28"}`}>
-              <div className={`${showModal ?"text-left":"text-right"} lg:w-7/12`}>
+              <div className={` text-center ${showModal ?"text-left":"text-right"} lg:w-7/12`}>
                 <p className={`text-lg sm:text-2xl text-white   ${showModal ? "animate__animated animate__slideInRight" : "animate__animated animate__slideInLeft"} `}>
                   Welcome to <strong className="text-orange-500 ">GrowMark</strong>
                 </p>

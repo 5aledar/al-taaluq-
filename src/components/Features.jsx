@@ -26,21 +26,24 @@ const Features = () => {
 
   return (
     <div className="container mx-auto py-10">
+    <h2 className="text-3xl font-bold text-white text-center py-7">
+      Our Features
+    </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {features.map((feature, index) => (
           <div
-            className="bg-white p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-black p-6  rounded-lg shadow-lg shadow-white hover:shadow-sm transition-shadow duration-300"
             key={index}
           >
-            <div className="mb-4 flex justify-center">
+            <div className="mb-4 flex justify-center text-orange-500">
               <img
                 className="w-20 h-20 "
                 src={feature.imgSrc}
                 alt={feature.title}
               />
             </div>
-            <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
-            <p className="text-gray-600">{feature.description}</p>
+            <h5 className="text-xl font-semibold mb-2 text-orange-500">{feature.title}</h5>
+            <p className="text-white">{feature.description}</p>
           </div>
         ))}
       </div>
