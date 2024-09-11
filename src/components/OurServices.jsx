@@ -1,4 +1,3 @@
-import React from "react";
 
 export const OurServices = () => {
   const features = [
@@ -57,7 +56,7 @@ export const OurServices = () => {
           Digital Marketing Services that We Offer
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center animate__animated animate__fadeInUp">
         {features.map((feature, index) => (
           <div
             className=" relative bg-white p-6 border   rounded-lg  transition ease-in-out   hover:-translate-y-5  hover:bg-stone-100 duration-300 group"
