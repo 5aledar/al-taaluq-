@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar'
 import './App.css'
-
+import { Home } from './pages/Home'
 function App() {
 
 
   return (
     <>
-      <Navbar />
+    <Navbar/>
       <Routes>
-        {/* <Route path='/'  /> */}
+        <Route path='/' element={<Home />} />
       </Routes>
     </>
   )
