@@ -26,19 +26,10 @@ const TestomonialContainer = () => {
         }
     ]
   return (
-    // <div className='flex '>
-    //   {
-    //     testmonials.map((item) => {
-    //         return(
-    //             <Testemonial  name={item.name} comapny={item.company} text={item.text}/>
-    //         )
-    //     })
-    //   }
-    // </div>
 
-    <>
+    <div className='my-5'>
       {testimonials.length && (
-        <div className=''>
+        <div>
           <Testemonial name={testimonials[currentIndex].name} comapny={testimonials[currentIndex].company} text={testimonials[currentIndex].text} />
 
           <div className="flex justify-center gap-3 items-center">
@@ -53,7 +44,7 @@ const TestomonialContainer = () => {
         </div>
       )}
  
-    </>
+    </div>
   )
 }
 
