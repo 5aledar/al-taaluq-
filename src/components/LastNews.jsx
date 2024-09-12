@@ -20,7 +20,7 @@ const LastNews = () => {
   ];
 
   return (
-    <div className="container mx-auto text-center py-10 ">
+    <div className="container mx-auto text-center py-10 px-8 ">
     <h2 className="text-4xl font-bold  text-white text-center py-7 ">
       Alta'aloq LastNews
     </h2>
