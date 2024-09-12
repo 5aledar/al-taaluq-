@@ -1,1 +1,27 @@
-{"hero":"Welcome to taaluq company"}
+{
+    "hero": "Welcome to taaluq company",
+    "FeaturesSec": {
+        "SEC-Title": {
+            "span": "Our",
+            "p1": "Features"
+        },
+        "f1Title": "Award Winning",
+        "f1Description": "Feature1",
+        "f2Title": "Professional Staff",
+        "f2Description": "Feature2",
+        "f3Title": "Fair Prices",
+        "f3Description": "Feature3",
+        "f4Title": "24/7 Support",
+        "f4Description": "Feature4"
+    },
+    "LastNewsSec": {
+        "SEC-Title": "Alta'aloq Last News:",
+        "NewTitle1": "Cooperation Agreement : ",
+        "Newdescription1": "Signing a cooperation agreement with Diamond Future Academy",
+        "NewTitle2": "Memorandum of Understanding :",
+        "Newdescription2": "Signing a memorandum of understanding with the Faculty of Economics - Damascus University ",
+        "NewTitle3": "Cooperation note :",
+        "Newdescription3": "Signing a memorandum of cooperation with Shawaka Shahd Al-Sham "
+       
+    }
+}
