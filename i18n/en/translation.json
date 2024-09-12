@@ -1,1 +1,11 @@
-{"hero":"Welcome to taaluq company"}
+{
+    "hero": "Welcome to taaluq company",
+    "nav": {
+        "services": "Services",
+        "home": "Home",
+        "team": "Team",
+        "activities": "Activities",
+        "testmonials":"Testmonials",
+        "about":"About"
+    }
+}
