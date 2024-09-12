@@ -120,14 +120,21 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          {languages.map((language) => (
-            <button
-              onClick={() => i18n.changeLanguage(language.code)}
-              key={language.code}
-            >
-              {language.name}
-            </button>
-          ))}
+          {/* Dropdown menu */}
+          <details className="dropdown bg-gray-900 ">
+            <summary className="btn m-1 bg-gray-900">Languages</summary>
+            <ul className="menu dropdown-content bg-slate-950 rounded-box z-[1] w-32 p-2 shadow">
+              {languages.map((language) => (
+                <li
+                  className="hover:text-orange-500  transition duration-300 cursor-pointer" 
+                  onClick={() => i18n.changeLanguage(language.code)}
+                  key={language.code}
+                >
+                  {language.name}
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       </div>
       {/* mobile menu */}
