@@ -55,9 +55,9 @@ const Team = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 ">
       <div className="text-center mx-auto mb-12 max-w-xl">
-        <h1 className="text-4xl font-bold py-3 text-gray-900">Our Team</h1>
+        <h1 className="text-4xl font-bold py-3 text-white">Our Team</h1>
         <h1 className="text-3xl font-medium text-orange-600">
           Our Expert People Ready to Help You
         </h1>
