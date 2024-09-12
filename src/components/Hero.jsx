@@ -47,8 +47,8 @@ export const Hero = () => {
                       : "animate__animated animate__slideInLeft"
                   } `}
                 >
-                  {t("hero")}{" "}
-                  <strong className="text-orange-500 ">GrowMark</strong>
+                  {t("hero.p1")}{" "}
+                  <strong className="text-orange-500 "> {t("hero.span")}</strong>
                 </p>
                 <h1
                   className={`text-2xl sm:text-6xl font-extrabold text-white mb-5 ${
@@ -58,12 +58,12 @@ export const Hero = () => {
                   } `}
                 >
                   {showModal ? (
-                    <strong className="transition-all">
-                      Ready to Grow Your Business
+                    <strong className="transition-all ">
+                      {t("hero.h1strong1")}
                     </strong>
                   ) : (
                     <strong className="transition-all ">
-                      Unlock Your Business Growth
+                      {t("hero.h1")}
                     </strong>
                   )}
                 </h1>

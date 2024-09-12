@@ -1,45 +1,46 @@
-
+import { useTranslation } from "react-i18next";
 export const OurServices = () => {
+  const {t,i18n} = useTranslation();
   const features = [
     {
       imgSrc: "/icon-1.png",
-      title: "Award Winning",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.0.title"),
+      description: t("OurServices.features.0.description"),
     },
     {
       imgSrc: "/icon-2.png",
-      title: "Professional Staff",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.1.title"),
+      description: t("OurServices.features.1.description"),
     },
     {
       imgSrc: "/icon-3.png",
-      title: "Fair Prices",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.2.title"),
+      description: t("OurServices.features.2.description"),
     },
     {
       imgSrc: "/icon-4.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.3.title"),
+      description: t("OurServices.features.3.description"),
     },
     {
       imgSrc: "/icon-5.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.3.title"),
+      description: t("OurServices.features.3.description"),
     },
     {
       imgSrc: "/icon-6.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.4.title"),
+      description: t("OurServices.features.4.description"),
     },
     {
       imgSrc: "/icon-7.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.5.title"),
+      description: t("OurServices.features.5.description"),
     },
     {
       imgSrc: "/icon-8.png",
-      title: "24/7 Support",
-      description: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam",
+      title: t("OurServices.features.6.title"),
+      description: t("OurServices.features.6.description"),
     },
   ];
 
@@ -51,9 +52,9 @@ export const OurServices = () => {
           animationDelay: "0.1s",
         }}
       >
-        <p className="text-lg font-medium text-blue-600">Our Services</p>
+        <p className="text-lg font-medium text-blue-600">{t("OurServices.p1")}</p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5">
-          Digital Marketing Services that We Offer
+        {t("OurServices.h2")}
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center animate__animated animate__fadeInUp">
