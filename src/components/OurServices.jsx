@@ -44,7 +44,7 @@ export const OurServices = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10 ">
+    <div className="container mx-auto py-10 px-8 ">
       <div
         className="text-center mx-auto max-w-lg animate__animated animate__fadeInUp mb-14 "
         style={{

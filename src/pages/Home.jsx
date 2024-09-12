@@ -7,7 +7,7 @@ import TestomonialContainer from '../containers/TestomonialContainer'
 import LastNews from '../components/LastNews'
 export const Home = () => {
   return (
-    <div>
+    <div className=''>
         <Hero/>
         <Features/>
         <About/>
