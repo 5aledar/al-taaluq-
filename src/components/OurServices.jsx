@@ -69,8 +69,8 @@ export const OurServices = () => {
                 alt={feature.title}
               />
             </div>
-            <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
-            <p className="text-slate-600 text-lg">{feature.description}</p>
+            <h5 className="text-xl font-semibold mb-2 group-hover:text-orange-500">{feature.title}</h5>
+            <p className="text-slate-600 text-lg group-hover:text-slate-900">{feature.description}</p>
 
             <div className=" cursor-pointer absolute -bottom-6 right-0   transition-all ease-in-out duration-500 rounded-xl p-0 m-0   bg-orange-300 text-white w-full opacity-0 group-hover:opacity-100  hover:bg-orange-500 ">
               <p className="font-bold items-center m-auto leading-10   ">

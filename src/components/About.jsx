@@ -1,15 +1,18 @@
-import "./About.css";
+// import "./About.css";
 import { FaCirclePlay } from "react-icons/fa6";
 const About = () => {
   return (
-    <div className=" about my-5 flex ">
+    <div className=" about py-5 flex animate__animated animate__fadeInUp " style={{background:`url(/about.jpg)`,backgroundPosition:'center',backgroundSize:'cover'}} >
       <div className=" w-full">
         <div className="flex justify-between gap-10">
           <div className="col-lg-6 w-1/2 flex justify-center">
             <div className="lg:w-6/12">
               <div className="h-full flex items-center justify-center min-h-[300px]">
                 <button className="animate-bounce">
-                  <a target="_balnk" href="https://youtu.be/P-FAqaeHSfc?feature=shared">
+                  <a
+                    target="_balnk"
+                    href="https://youtu.be/P-FAqaeHSfc?feature=shared"
+                  >
                     <i>
                       <FaCirclePlay
                         size={"100px"}
@@ -41,7 +44,7 @@ const About = () => {
                 <div className="col-sm-6 mr-6">
                   <img
                     className="img-fluid mb-4"
-                    src="/public/icon-5.png"
+                    src="/icon-5.png"
                     alt=""
                   />
                   <h5 className="mb-3 text-xl font-bold ">Managed Services</h5>
@@ -50,7 +53,7 @@ const About = () => {
                 <div className="col-sm-6 ">
                   <img
                     className="img-fluid mb-4"
-                    src="/public/icon-2.png"
+                    src="/icon-2.png"
                     alt=""
                   />
                   <h5 className="mb-3 text-xl font-bold ">Dedicated Experts</h5>

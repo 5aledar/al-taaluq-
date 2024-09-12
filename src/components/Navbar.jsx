@@ -48,18 +48,18 @@ const Navbar = () => {
                 Services
               </Link>
               <Link
-                to="/projects"
-                className={`py-4 px-2 text-xl ${active === '/projects' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
-                onClick={() => handleItemClick('/projects')}
+                to="/Team"
+                className={`py-4 px-2 text-xl ${active === '/Team' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
+                onClick={() => handleItemClick('/Team')}
               >
-                Projects
+                Team
               </Link>
               <Link
-                to="/contact"
-                className={`py-4 px-2 text-xl ${active === '/contact' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
-                onClick={() => handleItemClick('/contact')}
+                to="/OurActivities"
+                className={`py-4 px-2 text-xl ${active === '/OurActivities' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
+                onClick={() => handleItemClick('/OurActivities')}
               >
-                Contact
+                OurActivities
               </Link>
             </div>
           </div>
@@ -112,18 +112,18 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          to="/projects"
-          className={`block py-2 px-4 text-lg ${active === '/projects' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
-          onClick={() => handleItemClick('/projects')}
+          to="/Team"
+          className={`block py-2 px-4 text-lg ${active === '/Team' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
+          onClick={() => handleItemClick('/Team')}
         >
-          Projects
+          Team
         </Link>
         <Link
-          to="/contact"
-          className={`block py-2 px-4 text-lg ${active === '/contact' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
-          onClick={() => handleItemClick('/contact')}
+          to="/OurActivities"
+          className={`block py-2 px-4 text-lg ${active === '/OurActivities' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
+          onClick={() => handleItemClick('/OurActivities')}
         >
-          Contact
+          OurActivities
         </Link>
         <Link
           to="/get-a-quote"
