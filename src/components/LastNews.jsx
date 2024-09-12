@@ -20,29 +20,30 @@ const LastNews = () => {
   ];
 
   return (
-    <div className="container mx-auto text-center py-10 ">
-    <h2 className="text-4xl font-bold  text-white text-center py-7 ">
-      Alta'aloq LastNews
+    <div className=" container mx-auto text-center py-10  ">
+    <h2 className="text-4xl font-bold underline text-white  py-7 ">
+      Alta'aloq LastNews : 
     </h2>
     
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-        {features.map((feature, index) => (
-          <div
-            className="bg-white p-6  rounded-lg  hover:shadow-sm transition-shadow duration-300"
-            key={index}
-          >
-            <div className="mb-4 flex justify-center text-orange-500">
-              <img
-                className="w-20 h-20 "
-                src={feature.imgSrc}
-                alt={feature.title}
-              />
-            </div>
-            <h5 className="text-xl font-semibold mb-2 text-orange-500">{feature.title}</h5>
-            <p className="text-black">{feature.description}</p>
-          </div>
-        ))}
-      </div>
+    <div className="grid md:grid-cols-2 gap-6">
+    <div className="order-2 md:order-1">
+      {features.map((feature, index) => (
+        <div
+          className="flex-wrap mx-auto p-6 rounded-lg hover:shadow-sm transition-shadow duration-300"
+          key={index}
+        >
+          <h5 className="text-xl font-semibold mb-2 text-orange-500">
+            {feature.title} :
+          </h5>
+          <p className="text-black">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+    <div className=" m-auto order-1 md:order-2">
+      <img src="/about.jpg" alt="About Image" className="w-full rounded-lg" />
+    </div>
+  </div>
+  
     </div>
   );
 };
