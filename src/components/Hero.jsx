@@ -1,9 +1,14 @@
 import "animate.css";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 export const Hero = () => {
   const [showModal, setShowModal] = useState(false);
+  const { t, i18n } = useTranslation();
 
+  const languages = [
+    { code: "en", name: "English" },
+    { code: "ar", name: "arabic" },
+  ];
   const handelClick = () => {
     setShowModal((prev) => !prev);
   };
@@ -16,27 +21,59 @@ export const Hero = () => {
           backgroundImage: showModal
             ? "url('/carousel-2.jpg')"
             : "url('/carousel-1.jpg')",
-            backgroundSize: "cover",
-            
+          backgroundSize: "cover",
         }}
       >
-        <div className={`absolute inset-0   bg-black bg-opacity-50 flex items-center`}>
+        <div
+          className={`absolute inset-0   bg-black bg-opacity-50 flex items-center`}
+        >
           <div className={`container mx-auto`}>
-            <div className={`flex justify-end  absolute ${showModal ? " left-4 top-48 sm:-left-64 " : "top-48 right-4 sm:top-48 sm:right-28"}`}>
-              <div className={` text-center ${showModal ?"sm:text-left":"sm:text-right"} lg:w-7/12`}>
-                <p className={`text-lg sm:text-2xl text-white   ${showModal ? "animate__animated animate__slideInRight" : "animate__animated animate__slideInLeft"} `}>
-                  Welcome to <strong className="text-orange-500 ">GrowMark</strong>
+            <div
+              className={`flex justify-end  absolute ${
+                showModal
+                  ? " left-4 top-48 sm:-left-64 "
+                  : "top-48 right-4 sm:top-48 sm:right-28"
+              }`}
+            >
+              <div
+                className={` text-center ${
+                  showModal ? "sm:text-left" : "sm:text-right"
+                } lg:w-7/12`}
+              >
+                <p
+                  className={`text-lg sm:text-2xl text-white   ${
+                    showModal
+                      ? "animate__animated animate__slideInRight"
+                      : "animate__animated animate__slideInLeft"
+                  } `}
+                >
+                  {t("hero")}{" "}
+                  <strong className="text-orange-500 ">GrowMark</strong>
                 </p>
-                <h1 className={`text-2xl sm:text-6xl font-extrabold text-white mb-5 ${showModal ? "animate__animated animate__slideInRight" : "animate__animated animate__slideInLeft"} `}>
+                <h1
+                  className={`text-2xl sm:text-6xl font-extrabold text-white mb-5 ${
+                    showModal
+                      ? "animate__animated animate__slideInRight"
+                      : "animate__animated animate__slideInLeft"
+                  } `}
+                >
                   {showModal ? (
-                    <strong className="transition-all">Ready to Grow Your Business</strong>
+                    <strong className="transition-all">
+                      Ready to Grow Your Business
+                    </strong>
                   ) : (
-                    <strong className="transition-all ">Unlock Your Business Growth</strong>
+                    <strong className="transition-all ">
+                      Unlock Your Business Growth
+                    </strong>
                   )}
                 </h1>
                 <a
                   href="#"
-                  className={`inline-block bg-orange-500 text-white rounded-full py-3 px-5 animate__animated animate__slideInLeft hover:bg-orange-600 transition duration-400 ${showModal ? "animate__animated animate__slideInRight duration-1000" : "animate__animated animate__slideInLeft"}`}
+                  className={`inline-block bg-orange-500 text-white rounded-full py-3 px-5 animate__animated animate__slideInLeft hover:bg-orange-600 transition duration-400 ${
+                    showModal
+                      ? "animate__animated animate__slideInRight duration-1000"
+                      : "animate__animated animate__slideInLeft"
+                  }`}
                 >
                   Explore More
                 </a>

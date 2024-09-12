@@ -25,7 +25,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 px-8">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 py-10 animate__animated animate__fadeInUp text-center">
         <span className="text-orange-500">Our</span> Features
       </h2>
