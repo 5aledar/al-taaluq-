@@ -2,30 +2,27 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <footer className="footer bg-base-300 text-base-content p-10" id='footer'>
             <nav>
-                <h6 className="footer-title">Sections</h6>
-                <Link to='/services' className="link link-hover">Services</Link>
-                <Link to='/' className="link link-hover">Home</Link>
-                <Link className="link link-hover">Marketing</Link>
-                <Link className="link link-hover">Advertisement</Link>
+                <h6 className="footer-title">{t("footer.sections.sections")}</h6>
+                <Link to='/' className="link link-hover">{t("footer.sections.home")}</Link>
+                <Link to='/services' className="link link-hover">{t("footer.sections.services")}</Link>
+                <Link to='/about' className="link link-hover">{t("footer.sections.about")}</Link>
+                <Link to='/Testmonials' className="link link-hover">{t("footer.sections.testmonials")}</Link>
             </nav>
             <nav>
-                <h6 className="footer-title">Company</h6>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 className="footer-title">Contact Us</h6>
+                <h6 className="footer-title">{t("footer.contact")}</h6>
                 <div className='flex items-center gap-1'><FaPhoneAlt /> 0943366841</div>
                 <div className='flex items-center gap-1'><MdEmail /> info@altaaloq.sy</div>
             </nav>
             <nav>
-                <h6 className="footer-title">Social</h6>
+                <h6 className="footer-title">{t("footer.social")}</h6>
                 <div className="grid grid-flow-col gap-4">
                     <a href='https://www.linkedin.com/company/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%AA%D8%A3%D9%84%D9%82-%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-altaaloq/' target='_blanc'>
                         <svg className="w-6 h-6 text-gray-800 dark:text-zinc-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
