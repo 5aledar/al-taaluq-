@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import About from './components/About'
 import Team from './components/Team'
 import { OurActivities } from './components/OurActivities'
+import TestomonialContainer from './containers/TestomonialContainer'
 function App() {
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/Team' element={<Team/>}/>
         <Route path='/OurActivities' element={<OurActivities/>}/>
         <Route path='services' element={<OurServices/>} />
+        <Route path='Testmonials' element={<TestomonialContainer/>} />
       </Routes>
       <Footer  />
     </React.Fragment>

@@ -59,7 +59,14 @@ const Navbar = () => {
                 className={`py-4 px-2 text-xl ${active === '/OurActivities' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
                 onClick={() => handleItemClick('/OurActivities')}
               >
-                OurActivities
+                Activities
+              </Link>
+              <Link
+                to="/Testmonials"
+                className={`py-4 px-2 text-xl ${active === '/Testmonials' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
+                onClick={() => handleItemClick('/Testmonials')}
+              >
+                Testmonials
               </Link>
             </div>
           </div>
@@ -124,6 +131,13 @@ const Navbar = () => {
           onClick={() => handleItemClick('/OurActivities')}
         >
           OurActivities
+        </Link>
+        <Link
+          to="/Testmonials"
+          className={`block py-2 px-4 text-lg ${active === '/Testmonials' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
+          onClick={() => handleItemClick('/Testmonials')}
+        >
+          Testmonials
         </Link>
         <Link
           to="/get-a-quote"
