@@ -5,13 +5,17 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+
 
 const Team = () => {
+  const { t } = useTranslation();
+
   const teamMembers = [
     {
       imgSrc: "/team-1.jpg",
-      name: "Alex Robin",
-      role: "Founder & CEO",
+      name: t("team.member1.name"),
+      role: t("team.member1.role"),
       socialLinks: {
         facebook: "#",
         twitter: "#",
@@ -21,8 +25,8 @@ const Team = () => {
     },
     {
       imgSrc: "/team-2.jpg",
-      name: "Adam Crew",
-      role: "Co Founder",
+      name: t("team.member2.name"),
+      role: t("team.member2.role"),
       socialLinks: {
         facebook: "#",
         twitter: "#",
@@ -32,8 +36,8 @@ const Team = () => {
     },
     {
       imgSrc: "/team-3.jpg",
-      name: "Boris Johnson",
-      role: "Executive Manager",
+      name: t("team.member3.name"),
+      role: t("team.member3.role"),
       socialLinks: {
         facebook: "#",
         twitter: "#",
@@ -43,8 +47,8 @@ const Team = () => {
     },
     {
       imgSrc: "/team-4.jpg",
-      name: "Robert Jordan",
-      role: "Digital Marketer",
+      name: t("team.member4.name"),
+      role: t("team.member4.role"),
       socialLinks: {
         facebook: "#",
         twitter: "#",
@@ -57,9 +61,11 @@ const Team = () => {
   return (
     <div className="container mx-auto py-10 px-8">
       <div className="text-center mx-auto mb-12 max-w-xl">
-        <h1 className="text-4xl font-bold py-3 text-white">Our Team</h1>
+        <h1 className="text-4xl font-bold py-3 text-white">
+          {t("team.header")}
+        </h1>
         <h1 className="text-3xl font-medium text-orange-600">
-          Our Expert People Ready to Help You
+          {t("team.subHeader")}
         </h1>
       </div>
 
@@ -67,15 +73,15 @@ const Team = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="team-item relative bg-black rounded-lg overflow-hidden shadow-lg group "
+            className=" relative bg-gray-900 rounded-xl  shadow-lg group "
           >
             <img
-              className=" w-full py-2 h-64 object-cover mb-4 "
+              className=" w-full  h-[350px] object-cover mb-4 "
               src={member.imgSrc}
               alt={member.name}
             />
             <div className="p-4 text-center">
-              <h5 className="text-3xl font-semibold">{member.name}</h5>
+              <h5 className="text-3xl mb-2 font-semibold">{member.name}</h5>
               <span className="text-orange-600 text-xl block mb-4">{member.role}</span>
 
               {/* Social Icons */}

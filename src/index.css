@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 .fadIn{
     animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) ;
     -webkit-animation-timeline: view();

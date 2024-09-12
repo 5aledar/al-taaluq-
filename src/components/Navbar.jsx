@@ -38,75 +38,65 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-1">
               <Link
                 to="/"
-                className={`py-4 px-2 text-xl ${
-                  active === "/"
+                className={`py-4 px-2 text-xl ${active === "/"
                     ? "text-white border-b-4 border-white font-semibold"
                     : "text-orange-500 font-semibold hover:text-white transition duration-300"
-                }`}
+                  }`}
                 onClick={() => handleItemClick("/")}
               >
-                Home
+                {t("nav.home")}
               </Link>
               <Link
                 to="/about"
-                className={`py-4 px-2 text-xl ${
-                  active === "/about"
+                className={`py-4 px-2 text-xl ${active === "/about"
                     ? "text-white border-b-4 border-white font-semibold"
                     : "text-orange-500 font-semibold hover:text-white transition duration-300"
-                }`}
+                  }`}
                 onClick={() => handleItemClick("/about")}
               >
-                About
+                {t("nav.about")}
               </Link>
               <Link
                 to="/services"
-                className={`py-4 px-2 text-xl ${
-                  active === "/services"
+                className={`py-4 px-2 text-xl ${active === "/services"
                     ? "text-white border-b-4 border-white font-semibold"
                     : "text-orange-500 font-semibold hover:text-white transition duration-300"
-                }`}
+                  }`}
                 onClick={() => handleItemClick("/services")}
               >
-                Services
+                {t("nav.services")}
               </Link>
               <Link
                 to="/Team"
-                className={`py-4 px-2 text-xl ${
-                  active === "/Team"
+                className={`py-4 px-2 text-xl ${active === "/Team"
                     ? "text-white border-b-4 border-white font-semibold"
                     : "text-orange-500 font-semibold hover:text-white transition duration-300"
-                }`}
+                  }`}
                 onClick={() => handleItemClick("/Team")}
               >
-                Team
+                {t("nav.team")}
               </Link>
               <Link
                 to="/OurActivities"
-                className={`py-4 px-2 text-xl ${
-                  active === "/OurActivities"
+                className={`py-4 px-2 text-xl ${active === "/OurActivities"
                     ? "text-white border-b-4 border-white font-semibold"
                     : "text-orange-500 font-semibold hover:text-white transition duration-300"
-                }`}
+                  }`}
                 onClick={() => handleItemClick("/OurActivities")}
               >
-                OurActivities
+                {t("nav.activities")}
+              </Link>
+              <Link
+                to="/Testmonials"
+                className={`py-4 px-2 text-xl ${active === '/Testmonials' ? 'text-white border-b-4 border-white font-semibold' : 'text-orange-500 font-semibold hover:text-white transition duration-300'}`}
+                onClick={() => handleItemClick('/Testmonials')}
+              >
+                {t("nav.testmonials")}
               </Link>
             </div>
           </div>
           {/* Secondary Navbar items */}
-          <div className="hidden md:flex items-center">
-            <Link
-              to="/get-a-quote"
-              className={`py-2 px-3 text-[17px] ${
-                active === "/get-a-quote"
-                  ? "bg-white text-gray-900 rounded"
-                  : "bg-gray-900 text-orange-500 border border-orange-500 rounded hover:bg-white hover:text-gray-900 hover:border-white transition duration-300"
-              }`}
-              onClick={() => handleItemClick("/get-a-quote")}
-            >
-              Get A Quote
-            </Link>
-          </div>
+          
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
@@ -120,84 +110,83 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          {languages.map((language) => (
-            <button
-              onClick={() => i18n.changeLanguage(language.code)}
-              key={language.code}
-            >
-              {language.name}
-            </button>
-          ))}
+          {/* Dropdown menu */}
+          <details className="dropdown bg-gray-900 ">
+            <summary className="btn m-1 bg-gray-900">Languages</summary>
+            <ul className="menu dropdown-content bg-slate-950 rounded-box z-[1] w-32 p-2 shadow">
+              {languages.map((language) => (
+                <li
+                  className="hover:text-orange-500  transition duration-300 cursor-pointer" 
+                  onClick={() => i18n.changeLanguage(language.code)}
+                  key={language.code}
+                >
+                  {language.name}
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       </div>
       {/* mobile menu */}
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <Link
           to="/"
-          className={`block py-2 px-4 text-lg ${
-            active === "/"
+          className={`block py-2 px-4 text-lg ${active === "/"
               ? "bg-gray-800 text-white"
               : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleItemClick("/")}
         >
-          Home
+          {t("nav.home")}
         </Link>
         <Link
           to="/about"
-          className={`block py-2 px-4 text-lg ${
-            active === "/about"
+          className={`block py-2 px-4 text-lg ${active === "/about"
               ? "bg-gray-800 text-white"
               : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleItemClick("/about")}
         >
-          About
+          {t("nav.about")}
         </Link>
         <Link
           to="/services"
-          className={`block py-2 px-4 text-lg ${
-            active === "/services"
+          className={`block py-2 px-4 text-lg ${active === "/services"
               ? "bg-gray-800 text-white"
               : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleItemClick("/services")}
         >
-          Services
+          {t("nav.services")}
         </Link>
         <Link
           to="/Team"
-          className={`block py-2 px-4 text-lg ${
-            active === "/Team"
+          className={`block py-2 px-4 text-lg ${active === "/Team"
               ? "bg-gray-800 text-white"
               : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleItemClick("/Team")}
         >
-          Team
+          {t("nav.team")}
         </Link>
         <Link
           to="/OurActivities"
-          className={`block py-2 px-4 text-lg ${
-            active === "/OurActivities"
+          className={`block py-2 px-4 text-lg ${active === "/OurActivities"
               ? "bg-gray-800 text-white"
               : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
+            }`}
           onClick={() => handleItemClick("/OurActivities")}
         >
-          OurActivities
+          {t("nav.activities")}
         </Link>
         <Link
-          to="/get-a-quote"
-          className={`block py-2 px-4 text-lg ${
-            active === "/get-a-quote"
-              ? "bg-gray-800 text-white"
-              : "text-orange-500 hover:bg-gray-800 hover:text-white"
-          }`}
-          onClick={() => handleItemClick("/get-a-quote")}
+          to="/Testmonials"
+          className={`block py-2 px-4 text-lg ${active === '/Testmonials' ? 'bg-gray-800 text-white' : 'text-orange-500 hover:bg-gray-800 hover:text-white'}`}
+          onClick={() => handleItemClick('/Testmonials')}
         >
-          Get A Quote
+          {t("nav.testmonials")}
         </Link>
+        
       </div>
     </nav>
   );

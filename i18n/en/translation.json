@@ -1,4 +1,92 @@
 {
+  "hero": {
+    "p1": "Welcome to the company",
+    "span": "Al-Talaq (The Brilliance)",
+    "h1": "Fill your career with success, creativity, and brilliance",
+    "h1strong1": " perseverance and resolve to achieve the goal."
+  },
+  "OurServices":{
+    "p1":"Our Services",
+    "h2":"For a better life, take a look at some of the services we offer.",
+    "features": [
+        {
+          "title": "Training and Qualification",
+          "description": "The right change leads to the right life."
+        },
+        {
+          "title": "Online Courses",
+          "description": "Training programs related to managers and supervisors."
+        },
+        {
+          "title": "Classroom Training Courses",
+          "description": "Training programs focused on developing skills, enhancing abilities, and improving employee performance."
+        },
+        {
+          "title": "Employee Life Coaching",
+          "description": "Various training programs related to customer service."
+        },
+        {
+          "title": "Life Coaching and Training for New Entrepreneurs",
+          "description": "A set of programs that contribute to creating and increasing employee satisfaction, engagement, and spreading happiness."
+        },
+        {
+          "title": "Life Coaching for Managers and Supervisors",
+          "description": "Programs to enhance employee satisfaction, loyalty, happiness, and job engagement."
+        },
+        {
+          "title": "Special Programs",
+          "description": "Other training programs tailored to specific training needs."
+        },
+        {
+          "title": "Etiquette Training Programs",
+          "description": "Training programs focused on protocol and etiquette."
+        }
+      ]
+  },
+  "nav": {
+    "services": "Services",
+    "home": "Home",
+    "team": "Team",
+    "activities": "Activities",
+    "testmonials":"Testmonials",
+    "about":"About"
+},
+"footer": {
+    "sections": {
+        "sections": "Sections",
+        "services": "Services",
+        "home": "Home",
+        "team": "Team",
+        "activities": "Activities",
+        "testmonials": "Testmonials",
+        "about": "About us"
+    },
+    "contact": "Contact us",
+    "social":"social"
+},
+    "team":{
+    "header":"Our Team",
+    "subHeader":"Our Experts People Ready to Help You",
+    "member1":{
+        "name":"Izdhar daabol",
+        "role":"Founder & CEO"
+    },
+    "member2":{
+        "name":"Rabiaa Alhaj Bakr",
+        "role":"Founder & CEO"
+    },
+    "member3":{
+        "name":"Ramiz Abdullah",
+        "role":"Founder & CEO"
+    },
+    "member4":{
+        "name":"Bassem Tantaoy",
+        "role":"Founder & CEO"
+    }
+}
+}
+   
+{
     "hero": "Welcome to taaluq company",
     "FeaturesSec": {
         "SEC-Title": {
