@@ -26,9 +26,9 @@ const Features = () => {
 
   return (
     <div className="container mx-auto py-10">
-    <h2 className="text-4xl font-bold text-white text-center py-7">
-      Our Features
-    </h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 py-10 animate__animated animate__fadeInUp text-center">
+        <span className="text-orange-500">Our</span> Features
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {features.map((feature, index) => (
           <div

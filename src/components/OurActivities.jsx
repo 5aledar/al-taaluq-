@@ -59,7 +59,6 @@ export const OurActivities = () => {
               </p>
             </div>
           </div>
-          
         ))}
       </div>
       <button></button>
