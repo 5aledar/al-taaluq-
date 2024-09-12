@@ -44,3 +44,49 @@
       ]
   }
 }
+
+{
+    "hero": "Welcome to taaluq company",
+    "nav": {
+        "services": "Services",
+        "home": "Home",
+        "team": "Team",
+        "activities": "Activities",
+        "testmonials":"Testmonials",
+        "about":"About"
+    },
+    "footer": {
+        "sections": {
+            "sections": "Sections",
+            "services": "Services",
+            "home": "Home",
+            "team": "Team",
+            "activities": "Activities",
+            "testmonials": "Testmonials",
+            "about": "About us"
+        },
+        "contact": "Contact us",
+        "social":"social"
+    },
+        "team":{
+        "header":"Our Team",
+        "subHeader":"Our Experts People Ready to Help You",
+        "member1":{
+            "name":"Izdhar daabol",
+            "role":"Founder & CEO"
+        },
+        "member2":{
+            "name":"Rabiaa Alhaj Bakr",
+            "role":"Founder & CEO"
+        },
+        "member3":{
+            "name":"Ramiz Abdullah",
+            "role":"Founder & CEO"
+        },
+        "member4":{
+            "name":"Bassem Tantaoy",
+            "role":"Founder & CEO"
+        }
+    }
+
+    }
