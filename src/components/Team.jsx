@@ -59,7 +59,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10 px-8">
+    <div className="container mx-auto py-10 px-8 animate__animated animate__fadeInUp">
       <div className="text-center mx-auto mb-12 max-w-xl">
         <h1 className="text-4xl font-bold py-3 text-white">
           {t("team.header")}
