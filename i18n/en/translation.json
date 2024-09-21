@@ -106,5 +106,28 @@
     "Newdescription2": "Signing a memorandum of understanding with the Faculty of Economics - Damascus University ",
     "NewTitle3": "Cooperation note :",
     "Newdescription3": "Signing a memorandum of cooperation with Shawaka Shahd Al-Sham "
+  },
+  "AboutUsSec": {
+    "SEC-Title": "About Us",
+    "h2": "The Best Marketing Agency to Improve Your Business",
+    "span1": "We are a limited liability company L.L.C. Commercial Registration 18492, a Syrian company par excellence established in the capital Damascus in 8/8/2018 and overcame all crises and challenges, believing that it gives us lessons and experiences Helkio and professionalism We need it and because it believes in its mission of the importance of human capital and its ability to achieve success and brilliance whatever the circumstances ",
+    "AboutTitle1": "Managed Services",
+    "AboutDesc1": " Technical services provided by a third party (such as a company or service provider) to manage and maintain a particular system or technology for the benefit of a customer(s) or individuals.",
+    "AboutTitle2": " Dedicated Experts",
+    "AboutDesc2": "Subject matter experts are people who possess deep knowledge in a specific field.",
+    "AboutBtn": "Explore More"
+  },
+  "testimonialSec":{
+    "name1":"khaled",
+    "company1":"google",
+    "text1":"I found exactly the solution I need here. I will definitely be back again",
+    "name2":"ali",
+    "company2":"sook",
+    "text2":"I am very happy to deal with you. Quality exceeded my expectations",
+    "name3":"sarah",
+    "company3":"al3m",
+    "text3":"Excellent technical support and prompt response to any query. I highly recommend it"
+    
   }
+
 }

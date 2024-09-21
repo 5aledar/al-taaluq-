@@ -1,29 +1,33 @@
 import React , {useState} from 'react'
 import Testemonial from '../components/Testemonial'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { useTranslation } from "react-i18next";
+
 // import { motion } from 'framer-motion';
 // import './TestomonialContainer.scss';
 const TestomonialContainer = () => {
+  const {t,i18n} = useTranslation();
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const handleClick = (index) => {
         setCurrentIndex(index);
       };
     const testimonials = [
         {
-            name:'sarah dayan',
-            company: 'google',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia, magnam eaque libero exercitationem quaerat. Quidem incidunt quod ratione inventore, esse voluptatem repudiandae odit. Itaque dolorem quaerat sint aliquid mollitia.'
+            name:t("testimonialSec.name1"),
+            company: t("testimonialSec.company1"),
+            text: t("testimonialSec.text1"),
         },
         {
-            name:'sarah ss',
-            company: 'google',
-            text:'Tailwind CSS is the only framework that Ive seen scale on large teams. Its easy to customize, adapts to any design, and the build size is tiny.'
-        },
-        {
-            name:'sarah sssssss',
-            company: 'google',
-            text:'Tailwind CSS is the only framework that Ive seen scale on large teams. Its easy to customize, adapts to any design, and the build size is tiny.'
-        }
+          name:t("testimonialSec.name2"),
+          company: t("testimonialSec.company2"),
+          text: t("testimonialSec.text2"),
+      },
+      {
+        name:t("testimonialSec.name3"),
+        company: t("testimonialSec.company3"),
+        text: t("testimonialSec.text3"),
+    }
     ]
   return (
 

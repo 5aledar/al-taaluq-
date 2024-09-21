@@ -74,16 +74,20 @@
 // import "./About.css";
 // import "./About.css";
 // import "./About.css";
+import { useTranslation } from "react-i18next";
+
 import { FaCirclePlay } from "react-icons/fa6";
 
 const About = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div
       className="py-5 flex flex-col md:flex-row"
       style={{
         background: `url(/about.jpg)`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div className="md:w-full md:h-[70vh] flex flex-col md:flex-row">
@@ -103,27 +107,40 @@ const About = () => {
           data-wow-delay="0.5s"
         >
           <div className="bg-white p-5 rounded-xl w-full md:w-3/4 text-center md:text-left">
-            <p className="text-lg md:text-2xl text-orange-500 font-bold mb-6">
-              About Us
+            <p className="text-lg md:text-2xl text-orange-500 font-bold mb-6 text-center">
+              {t("AboutUsSec.SEC-Title")}
             </p>
-            <h1 className="text-xl md:text-3xl font-bold mb-4">
-              The Best Marketing Agency to Improve Your Business
+            <h1 className="text-xl md:text-3xl font-bold mb-4 text-center">
+              {t("AboutUsSec.h2")}
             </h1>
-            <p className="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-              Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-              sed stet lorem sit clita duo justo
-            </p>
+            <p className="mb-4 text-center">{t("AboutUsSec.span1")}</p>
             <div className="flex flex-col md:flex-row gap-5 pt-2 mb-10">
               <div className="flex-1 text-center md:text-left">
-                <img className="mx-auto md:mx-0 img-fluid mb-4" src="/icon-5.png" alt="Managed Services" />
-                <h5 className="text-xl font-bold mb-3">Managed Services</h5>
-                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                <img
+                  className="mx-auto md:mx-0 img-fluid mb-4"
+                  src="/icon-5.png"
+                  alt="Managed Services"
+                />
+                <h5 className="text-xl font-bold mb-3 text-center">
+                  {t("AboutUsSec.AboutTitle1")}
+                </h5>
+                <span className="text-center">
+                  {t("AboutUsSec.AboutDesc1")}
+                </span>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <img className="mx-auto md:mx-0 img-fluid mb-4" src="/icon-2.png" alt="Dedicated Experts" />
-                <h5 className="text-xl font-bold mb-3">Dedicated Experts</h5>
-                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                <img
+                  className="mx-auto md:mx-0 img-fluid mb-4"
+                  src="/icon-2.png"
+                  alt="Dedicated Experts"
+                />
+                <h5 className="text-xl font-bold mb-3 text-center">
+                  {t("AboutUsSec.AboutTitle2")}
+                </h5>
+                <span className="text-center">
+                  {" "}
+                  {t("AboutUsSec.AboutDesc2")}
+                </span>
               </div>
             </div>
             <a
@@ -131,7 +148,7 @@ const About = () => {
               target="_blank"
               className="inline-block bg-orange-500 text-white rounded-full py-3 px-5 animate__animated animate__slideInLeft hover:bg-orange-600 transition duration-400"
             >
-              Explore More
+              {t("AboutUsSec.AboutBtnw")}
             </a>
           </div>
         </div>

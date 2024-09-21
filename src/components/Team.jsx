@@ -13,7 +13,7 @@ const Team = () => {
 
   const teamMembers = [
     {
-      imgSrc: "/team-1.jpg",
+      imgSrc: "/ezdehar.jpg",
       name: t("team.member1.name"),
       role: t("team.member1.role"),
       socialLinks: {
@@ -24,7 +24,7 @@ const Team = () => {
       },
     },
     {
-      imgSrc: "/team-2.jpg",
+      imgSrc: "/rbea.jpg",
       name: t("team.member2.name"),
       role: t("team.member2.role"),
       socialLinks: {
@@ -35,7 +35,7 @@ const Team = () => {
       },
     },
     {
-      imgSrc: "/team-3.jpg",
+      imgSrc: "/ramez.jpg",
       name: t("team.member3.name"),
       role: t("team.member3.role"),
       socialLinks: {
@@ -46,7 +46,7 @@ const Team = () => {
       },
     },
     {
-      imgSrc: "/team-4.jpg",
+      imgSrc: "/basem.jpg",
       name: t("team.member4.name"),
       role: t("team.member4.role"),
       socialLinks: {
