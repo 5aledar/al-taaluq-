@@ -117,17 +117,26 @@
     "AboutDesc2": "Subject matter experts are people who possess deep knowledge in a specific field.",
     "AboutBtn": "Explore More"
   },
-  "testimonialSec":{
-    "name1":"khaled",
-    "company1":"google",
-    "text1":"I found exactly the solution I need here. I will definitely be back again",
-    "name2":"ali",
-    "company2":"sook",
-    "text2":"I am very happy to deal with you. Quality exceeded my expectations",
-    "name3":"sarah",
-    "company3":"al3m",
-    "text3":"Excellent technical support and prompt response to any query. I highly recommend it"
-    
+  "testimonialSec": {
+    "name1": "khaled",
+    "company1": "google",
+    "text1": "I found exactly the solution I need here. I will definitely be back again",
+    "name2": "bayan",
+    "company2": "Al3m",
+    "text2": "I am very happy to deal with you. Quality exceeded my expectations",
+    "name3": "sarah",
+    "company3": "al3m",
+    "text3": "Excellent technical support and prompt response to any query. I highly recommend it"
+  },
+  "OurActivites": {
+    "H1": "Our Activities",
+    "A1": "Vision 2032",
+    "D1": "To be the number one provider locally and regionally for all our clients and a source of their trust in obtaining the expertise and knowledge required for success and excellence in the field of work.",
+    "A2": "message",
+    "D2": "At Al-Talaaq Company, we follow with passion all the latest global research and experiences in the field of business and benefit from them in providing consultations, solutions and training to companies and organizations through a specialized and professional team.",
+    "A3": "Objectives",
+    "D3": "1- Providing our clients with all the latest strategies that help them succeed in their work. 2- Preparing and developing our clients to have competencies and skills that match the labor market.3- Helping companies to be competitive companies in the labor market.- Enabling clients and helping them to start and grow with confidence and stability in establishing their own projects.- Enabling establishments and organizations to achieve their strategic goals.- And launching them.6- Helping our clients determine the future vision for their projects.- Linking young people to the labor market and providing them with the required competencies and skills.- Providing companies and institutions with the appropriate cadres for each position.9- Continuous development of the services provided by Al-Talaq Company to be in line with local and international standards.10- Designing training programs that suit the real and actual training needs of each company",
+    "A4": "",
+    "D4": ""
   }
-
 }
