@@ -52,8 +52,8 @@ export const OurServices = () => {
           animationDelay: "0.1s",
         }}
       >
-        <p className="text-lg font-medium text-blue-600">{t("OurServices.p1")}</p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5">
+        <p className="text-lg font-medium text-blue-600 ">{t("OurServices.p1")}</p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 ">
         {t("OurServices.h2")}
         </h1>
       </div>
