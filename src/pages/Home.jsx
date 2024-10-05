@@ -5,6 +5,7 @@ import { OurServices } from '../components/OurServices'
 import Team from '../components/Team'
 import TestomonialContainer from '../containers/TestomonialContainer'
 import LastNews from '../components/LastNews'
+import { OurActivities } from '../components/OurActivities'
 export const Home = () => {
   return (
     <div className=''>
@@ -15,6 +16,7 @@ export const Home = () => {
         <LastNews/>
         <Team/>
         <TestomonialContainer />
+        <OurActivities/>
     </div>
   )
 }

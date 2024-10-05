@@ -1,31 +1,22 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const OurActivities = () => {
+  const { t, i18n } = useTranslation();
   const activities = [
     {
-      title: "Activity 1",
-      description: "Description for activity 1.",
+      title: t("OurActivites.A1"),
+      description:t("OurActivites.D1") ,
     },
     {
-      title: "Activity 2",
-      description: "Description for activity 2.",
+      title: t("OurActivites.A2"),
+      description: t("OurActivites.D2"),
     },
     {
-      title: "Activity 3",
-      description: "Description for activity 3.",
+      title: t("OurActivites.A3"),
+      description: t("OurActivites.D3"),
     },
-    {
-      title: "Activity 4",
-      description: "Description for activity 4.",
-    },
-    {
-      title: "Activity 5",
-      description: "Description for activity 5.",
-    },
-    {
-      title: "Activity 6",
-      description: "Description for activity 5.",
-    },
+
   ];
 
   return (
@@ -33,11 +24,11 @@ export const OurActivities = () => {
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 py-10 animate__animated animate__fadeInUp text-center">
         <span className="text-orange-500">Our</span> Activities
       </h2>
-      <div className="text-white w-full flex flex-col gap-4 sm:flex-row justify-center flex-wrap my-20 animate__animated animate__fadeInUp px-8 ">
+      <div className="text-white w-full flex flex-col gap-4 x  text-center justify-center items-center flex-wrap my-20 animate__animated animate__fadeInUp px-8 ">
         {activities.map((activity, index) => (
           <div
             key={index}
-            className="collapse collapse-plus     bg-base-200 w-full sm:w-96 py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="collapse collapse-plus     bg-base-200 w-full sm:w-2/3  py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <input
               type="checkbox"

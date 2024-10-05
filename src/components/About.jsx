@@ -38,8 +38,8 @@ const About = () => {
               {t("AboutUsSec.h2")}
             </h1>
             <p className="mb-4 text-center">{t("AboutUsSec.span1")}</p>
-            <div className="flex flex-col md:flex-row gap-5 pt-2 mb-10">
-              <div className="flex-1 text-center md:text-left">
+            <div className="flex flex-col items-center justify-center md:flex-row gap-5 pt-2 mb-10">
+              <div className="flex-1 text-center  flex flex-col items-center justify-center md:text-left">
                 <img
                   className="mx-auto md:mx-0 img-fluid mb-4"
                   src="/icon-5.png"
@@ -52,7 +52,7 @@ const About = () => {
                   {t("AboutUsSec.AboutDesc1")}
                 </span>
               </div>
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-center flex flex-col items-center justify-center md:text-left">
                 <img
                   className="mx-auto md:mx-0 img-fluid mb-4"
                   src="/icon-2.png"

@@ -49,7 +49,7 @@ const { t, i18n } = useTranslation();
               />
             </div>
             <h5 className="text-xl font-semibold mb-2 text-orange-500">{feature.title}</h5>
-            <p className="text-black">{feature.description}</p>
+            {/* <p className="text-black">{feature.description}</p> */}
           </div>
         ))}
       </div>
